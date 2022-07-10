@@ -42,8 +42,8 @@ function loadWidget(config) {
 	let userAction = false,
 		userActionTimer,
 		messageTimer,
-		messageArray = ["嗨～快来逗我玩吧！", "夏虫也为我沉默，沉默是今晚的康桥。"
-										"记得把小家加入 Adblock 白名单哦！",
+		messageArray = ["夏虫也为我沉默，沉默是今晚的康桥。",
+										"嗨～快来逗我玩吧！", "记得把小家加入 Adblock 白名单哦！",
 										"去B站搜索<a href='https://space.bilibili.com/441196634'> 「东山月光下」 </a>关注我哦"];
 	window.addEventListener("mousemove", () => userAction = true);
 	window.addEventListener("keydown", () => userAction = true);
