@@ -44,7 +44,8 @@ function loadWidget(config) {
 		messageTimer,
 		messageArray = ["夏虫也为我沉默，沉默是今晚的康桥。",
 										"嗨～快来逗我玩吧！", "记得把小家加入 Adblock 白名单哦！",
-										"去B站搜索<a href='https://space.bilibili.com/441196634'> 「东山月光下」 </a>关注我哦"];
+										"去B站搜索<a href='https://space.bilibili.com/441196634'> 「东山月光下」 </a>关注我哦~",
+									  "既然选择了远方，便只顾风雨兼程。"];
 	window.addEventListener("mousemove", () => userAction = true);
 	window.addEventListener("keydown", () => userAction = true);
 	setInterval(() => {
