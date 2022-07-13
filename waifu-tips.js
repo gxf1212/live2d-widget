@@ -43,7 +43,7 @@ function loadWidget(config) {
 		userActionTimer,
 		messageTimer,
 		messageArray = ["嗨～快来逗我玩吧！", "记得把小家加入 Adblock 白名单哦！", "你觉得我的眼睛好看吗？",
-										"去B站搜索<a href='https://space.bilibili.com/441196634'> 「东山月光下」 </a>关注我哦~",
+										"去B站搜索<a href='https://space.bilibili.com/441196634' target='_blank'> 「东山月光下」 </a>关注我哦~",
 										"夏虫也为我沉默，沉默是今晚的康桥。", "不理睬是最大的轻蔑。嘤嘤嘤~",
 									  "既然选择了远方，便只顾风雨兼程。", "只要热爱生命，一切都在预料之中。",
 										"我有那么娇气吗？"];
