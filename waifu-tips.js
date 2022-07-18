@@ -46,10 +46,10 @@ function loadWidget(config) {
 										"B站搜索<a href='https://space.bilibili.com/441196634' target='_blank'> 「东山月光下」 </a>关注我哦~",
 										"夏虫也为我沉默，沉默是今晚的康桥。", "不理睬是最大的轻蔑。嘤嘤嘤~",
 										"既然选择了远方，便只顾风雨兼程。", "只要热爱生命，一切都在预料之中。",
-										"我有那么娇气吗？",
+										"我有那么娇气吗？", "你会把你妈卖给妓院吗？", "我爱你，与你无关。",
 										"没有什么能永远存在，即使是宇宙也有灭亡的那一天，凭什么人类就觉得自己该永远存在下去。",
 										"死亡是唯一一座永远亮着的灯塔，不管你向哪里航行，最终都得转向它指引的方向。",
-									    "不知从什么时候起，人类有了一种幻觉，认为生存成了唾手可得的东西，这就是你们失败的根本原因。"];
+										"出现这幅思维图景时，我正在想你。", "我挥挥手，那个夕阳前的剪影也挥挥手。看着那个身影，我感觉自己还是很年轻的。"];
 	window.addEventListener("mousemove", () => userAction = true);
 	window.addEventListener("keydown", () => userAction = true);
 	setInterval(() => {
@@ -104,7 +104,7 @@ function loadWidget(config) {
 			showMessage("你都复制了些什么呀，转载要记得加上出处哦！", 6000, 9);
 		});
 		window.addEventListener("visibilitychange", () => {
-			if (!document.hidden) showMessage("哇，你终于回来了～", 6000, 9);
+			if (!document.hidden) showMessage(["哇，你终于回来了～", "只是说一句，好久不见。"], 6000, 9);
 		});
 	})();
 
