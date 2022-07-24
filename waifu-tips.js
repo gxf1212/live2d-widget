@@ -3,6 +3,8 @@
  * https://github.com/stevenjoezhang/live2d-widget
  */
 
+// consider switching to https://github.com/mosuzi/live_fe/blob/master/assets/waifu-tips.js, to get a toolbar?
+
 function loadWidget(config) {
 	let { waifuPath, apiPath, cdnPath } = config;
 	let useCDN = false, modelList;
@@ -45,11 +47,13 @@ function loadWidget(config) {
 		messageArray = ["嗨～快来逗我玩吧！", "记得把小家加入 Adblock 白名单哦！", "你觉得我的眼睛好看吗？",
 										"B站搜索<a href='https://space.bilibili.com/441196634' target='_blank'> 「东山月光下」 </a>关注我哦~",
 										"夏虫也为我沉默，沉默是今晚的康桥。", "不理睬是最大的轻蔑。嘤嘤嘤~",
-										"既然选择了远方，便只顾风雨兼程。", "只要热爱生命，一切都在预料之中。",
 										"我有那么娇气吗？", "你会把你妈卖给妓院吗？", "我爱你，与你无关。",
 										"没有什么能永远存在，即使是宇宙也有灭亡的那一天，凭什么人类就觉得自己该永远存在下去。",
 										"死亡是唯一一座永远亮着的灯塔，不管你向哪里航行，最终都得转向它指引的方向。",
-										"出现这幅思维图景时，我正在想你。", "我挥挥手，那个夕阳前的剪影也挥挥手。看着那个身影，我感觉自己还是很年轻的。"];
+										"出现这幅思维图景时，我正在想你。",
+										"我挥挥手，那个夕阳前的剪影也挥挥手。看着那个身影，我感觉自己还是很年轻的。",
+										"人类很有趣地点了他们的小灯：喜悦他们所看见的；希望找着他们所要的。",
+										"不知从什么时候起，人类有了一种幻觉，认为生存成了唾手可得的东西。"];
 	window.addEventListener("mousemove", () => userAction = true);
 	window.addEventListener("keydown", () => userAction = true);
 	setInterval(() => {
