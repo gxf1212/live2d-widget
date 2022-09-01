@@ -57,7 +57,8 @@ function loadWidget(config) {
 						"不知从什么时候起，人类有了一种幻觉，认为生存成了唾手可得的东西。",
 						"把海弄干的鱼在海干前上了陆地，从一片黑暗森林奔向另一片黑暗森林。", "黑暗是生命和文明之母。",
 						"过去就像攥在手中的一把干沙，自以为攥得很紧，其实早就从指缝中流光了。",
-						"给世界以希望后又打碎它则是一种不可饶恕的罪恶。"];
+						"给世界以希望后又打碎它则是一种不可饶恕的罪恶。",
+						"在他们后面，黄金时代刚刚结束；在他们前面，人类的艰难岁月正在徐徐展开。"];
 	window.addEventListener("mousemove", () => userAction = true);
 	window.addEventListener("keydown", () => userAction = true);
 	setInterval(() => {
