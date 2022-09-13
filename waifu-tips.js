@@ -57,7 +57,8 @@ function loadWidget(config) {
 						"不知从什么时候起，人类有了一种幻觉，认为生存成了唾手可得的东西。",
 						"黑暗是生命和文明之母。",
 						"过去就像攥在手中的一把干沙，自以为攥得很紧，其实早就从指缝中流光了。",
-						"在他们后面，黄金时代刚刚结束；在他们前面，人类的艰难岁月正在徐徐展开。"];
+						"在他们后面，黄金时代刚刚结束；在他们前面，人类的艰难岁月正在徐徐展开。",
+						"你们所知道的荣耀是从历史记载中看到的，我们的创伤是父辈和祖辈的鲜血凝成的。"];
 	window.addEventListener("mousemove", () => userAction = true);
 	window.addEventListener("keydown", () => userAction = true);
 	setInterval(() => {
