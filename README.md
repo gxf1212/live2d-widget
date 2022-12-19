@@ -1,3 +1,29 @@
+# 三体风 Live2D 看板娘
+
+本仓库收录了我精心整理的《三体》三部曲中喜欢的许多短句，在点击、鼠标悬浮和长时间空闲时自动、随机发送消息。很遗憾长的段落无法展示在这里。感兴趣的朋友也可以fork，或贡献一些句子。
+
+用法：和正常相同，只是改一下地址。
+
+```html
+<script src="https://fastly.jsdelivr.net/gh/gxf1212/live2d-widget@master/autoload.js"></script>
+```
+
+效果展示：
+
+<img src="assets/1.png" alt="1" style="zoom: 33%;" /><img src="assets/2.png" alt="2" style="zoom:33%;" />
+
+
+
+<img src="assets/3.png" alt="3" style="zoom:33%;" /><img src="assets/4.png" alt="4" style="zoom:33%;" />
+
+
+
+<img src="assets/5.png" alt="5" style="zoom:33%;" /><img src="assets/6.png" alt="6" style="zoom:33%;" />
+
+
+
+以下是原README.md的内容。
+
 # Live2D Widget
 
 ![](https://forthebadge.com/images/badges/built-with-love.svg)
@@ -30,17 +56,21 @@ Add Live2D widget to web page. Compatible with PJAX.
 
 本插件需要 Font Awesome 图标支持，请确保相关样式表已在页面中加载。以 Font Awesome v6 为例，请在 `<head>` 中加入：  
 Font Awesome is required for this plugin. Take Font Awesome v6 as an example, please add the following in `<head>`:
+
 ```xml
 <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css">
 ```
+
 否则图标将无法正常显示。（如果网页中已经加载了任何版本的 Font Awesome，就不要重复加载了）
 
 ## 使用 Usage
 
 将这一行代码加入 `<head>` 或 `<body>`，即可展现出效果：
+
 ```xml
 <script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
 ```
+
 如果网站启用了 PJAX，由于看板娘不必每页刷新，因此要注意将相关脚本放到 PJAX 刷新区域之外。
 
 换句话说，如果你是小白，或者只需要最基础的功能，就只用把这一行代码，连同前面加载 Font Awesome 的一行代码，一起放到 html 的 `<head>` 中即可。  
@@ -52,10 +82,13 @@ Font Awesome is required for this plugin. Take Font Awesome v6 as an example, pl
 ### Using CDN
 
 要自定义有关内容，可以把这个仓库 Fork 一份，然后进行修改。这时，使用方法对应地变为
+
 ```xml
 <script src="https://fastly.jsdelivr.net/gh/username/live2d-widget@latest/autoload.js"></script>
 ```
+
 将此处的 `username` 替换为你的 GitHub 用户名。为了使 CDN 的内容正常刷新，需要创建新的 git tag 并推送至 GitHub 仓库中，否则此处的 `@latest` 仍然指向更新前的文件。此外 CDN 本身存在缓存，因此改动可能需要一定的时间生效。相关文档：
+
 - [Git Basics - Tagging](https://git-scm.com/book/en/v2/Git-Basics-Tagging)
 - [Managing releases in a repository](https://help.github.com/en/github/administering-a-repository/managing-releases-in-a-repository)
 
@@ -64,29 +97,38 @@ Font Awesome is required for this plugin. Take Font Awesome v6 as an example, pl
 你也可以直接把这些文件放到服务器上，而不是通过 CDN 加载。
 
 - 如果你能够通过 `ssh` 访问你的主机，请把整个仓库克隆到服务器上。执行：
+  
   ```bash
   cd /path/to/your/webroot
   # Clone this repository
   git clone https://github.com/stevenjoezhang/live2d-widget.git
   ```
+
 - 如果你的主机无法用 `ssh` 连接（例如一般的虚拟主机），请选择 `Download ZIP`，然后通过 `ftp` 等方式上传到主机上，再解压到网站的目录下。
+
 - 如果你是通过 Hexo 等工具部署的静态博客，请在博客源文件（即 `source`）目录下，执行前述的 `git clone` 命令。重新部署博客时，相关文件就会自动上传到对应的路径下。为了避免这些文件被 Hexo 插件错误地修改，可能需要设置 `skip_render`。
 
 这样，整个项目就可以通过你的服务器 IP 或者域名从公网访问了。不妨试试能否正常地通过浏览器打开 `autoload.js` 和 `live2d.min.js` 等文件，并确认这些文件的内容是完整和正确的。  
 一切正常的话，接下来修改一些配置就行了。（需要通过服务器上的文本编辑器修改；你也可以先在本地完成这一步骤，再上传到服务器上）  
 修改 `autoload.js` 中的常量 `live2d_path` 为 `live2d-widget` 这一目录的 URL。比如说，如果你能够通过
+
 ```
 https://example.com/path/to/live2d-widget/live2d.min.js
 ```
+
 访问到 `live2d.min.js`，那么就把 `live2d_path` 的值修改为
+
 ```
 https://example.com/path/to/live2d-widget/
 ```
+
 路径末尾的 `/` 一定要加上。具体可以参考 `autoload.js` 内的注释。  
 完成后，在你要添加看板娘的界面加入
+
 ```xml
 <script src="https://example.com/path/to/live2d-widget/autoload.js"></script>
 ```
+
 就可以加载了。
 
 ## 后端 API
