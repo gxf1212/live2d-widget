@@ -113,7 +113,7 @@ function loadWidget(config) {
 			showMessage("你都复制了些什么呀，转载要记得加上出处哦！", 6000, 9);
 		});
 		window.addEventListener("visibilitychange", () => {
-			if (!document.hidden) showMessage(["哇，你终于回来了～", "只是说一句，好久不见。", "我儿子还活着！"], 6000, 9);
+			if (!document.hidden) showMessage(["哇，你终于回来了～", "只是说一句，好久不见。", "我儿子还活着！", "欢迎您再次登录《三体》。"], 6000, 9);
 		});
 	})();
 

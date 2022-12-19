@@ -10,15 +10,15 @@
 
 效果展示：
 
-<img src="assets/1.png" alt="1" style="zoom: 33%;" /><img src="assets/2.png" alt="2" style="zoom:33%;" />
+<img src="assets/1.png" style="zoom: 33%;" /><img src="assets/2.png" style="zoom:33%;" />
 
 
 
-<img src="assets/3.png" alt="3" style="zoom:33%;" /><img src="assets/4.png" alt="4" style="zoom:33%;" />
+<img src="assets/3.png" style="zoom:33%;" /><img src="assets/4.png" style="zoom:33%;" />
 
 
 
-<img src="assets/5.png" alt="5" style="zoom:33%;" /><img src="assets/6.png" alt="6" style="zoom:33%;" />
+<img src="assets/5.png" style="zoom:33%;" /><img src="assets/6.png" style="zoom:33%;" />
 
 
 
