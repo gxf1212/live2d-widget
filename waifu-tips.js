@@ -60,6 +60,7 @@ function loadWidget(config) {
 						"不管后来的历史学家和文学家们如何描述，当时的真实情景就是这样平淡无奇。",
 						"在静静的午夜，宇宙向它的聆听者展示着广漠的荒凉。",
 						"没有了对高处的恐惧就体会不到高处之美。",
+						"这冷静来自于我的玩世不恭，这世界上很难有什么东西让我在意。",
 						"出现这幅思维图景时，我正在想你。"];
 	window.addEventListener("mousemove", () => userAction = true);
 	window.addEventListener("keydown", () => userAction = true);
