@@ -61,7 +61,10 @@ function loadWidget(config) {
 						"在静静的午夜，宇宙向它的聆听者展示着广漠的荒凉。",
 						"没有了对高处的恐惧就体会不到高处之美。",
 						"这冷静来自于我的玩世不恭，这世界上很难有什么东西让我在意。",
-						"出现这幅思维图景时，我正在想你。"];
+						"出现这幅思维图景时，我正在想你。",
+						"一样东西，要是离我们心中的概念差得太远，可不是好兆头。",
+						"在这寒冷广漠的宇宙中，同为碳基生命本身就是一种缘分，一种可能要几十亿年才能修得的缘分。",
+						"很好地与这种环境融为一体的人，同时也对它产生了依赖感"];
 	window.addEventListener("mousemove", () => userAction = true);
 	window.addEventListener("keydown", () => userAction = true);
 	setInterval(() => {
